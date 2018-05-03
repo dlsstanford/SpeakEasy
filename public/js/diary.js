@@ -157,7 +157,7 @@ $(document).ready(function() {
           case "sign in":
             window.location.href = "/signin";
             break;
-          case "entry":
+          case "entry", "note":
             window.location.href = "/entry" + userId;
             break;
         }
