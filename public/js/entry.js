@@ -153,7 +153,8 @@ $(document).ready(function() {
   var speakEasy = new Artyom();
   var commands = [
     {
-      description: "Trigger the creation of a post with your voice",
+      description:
+        "Trigger the creation of a post with your voice (fills to body input area)",
       indexes: ["start recording a new note", "create a new note"],
       action: function(i) {
         stopArtyom();
@@ -161,12 +162,16 @@ $(document).ready(function() {
       }
     },
     {
-      description: "Submit the new post for entry",
+      description:
+        "Submit the new post for entry (Must fill out both Title and Body fields",
       indexes: ["submit this post", "add this to my journal"],
       action: function(i) {
-  handleFormSubmit(event);
-
+        handleFormSubmit(event);
       }
+    },
+    {
+      description: "Stop recording now",
+      indexes: ["submit this post", "add this to my journal"]
     },
     {
       description: "Go to specified page (diary, entry, user)",
@@ -243,7 +248,9 @@ $(document).ready(function() {
       console.log(latestResult);
       if (latestResult === "speak") {
         noteContent.length = 0;
-      } else if (noteContent[noteContent.length - 2] === " stop recording now") {
+      } else if (
+        noteContent[noteContent.length - 2] === " stop recording now"
+      ) {
         UserDictation.stop();
       } else if (latestResult === "") {
         textToDisplay.push(noteContent[noteContent.length - 2]);
