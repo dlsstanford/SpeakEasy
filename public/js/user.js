@@ -76,7 +76,7 @@ $(document).ready(function() {
     console.log(userId);
   }
 
-  //Call the ajaz method to update the user data
+  //Call the ajax method to update the user data
   function updateUser(user) {
     userId = url.split("=")[1];
     console.log(userId);
