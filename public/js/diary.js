@@ -149,16 +149,16 @@ $(document).ready(function() {
       action: function(i, wildcard) {
         switch (wildcard) {
           case "diary":
-            window.location.href = "/diary/=" + userId;
+            window.location.href = "/diary" + userId;
             break;
           case "user":
-            window.location.href = "/user/=" + userId;
+            window.location.href = "/user" + userId;
             break;
           case "sign in":
             window.location.href = "/signin";
             break;
           case "entry":
-            window.location.href = "/entry/" + userId;
+            window.location.href = "/entry" + userId;
             break;
         }
       }
