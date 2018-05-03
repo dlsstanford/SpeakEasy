@@ -13,11 +13,11 @@
 2.  `node server.js` will open the app on localhost:8080
    
 ## Contributors
-Desmon Stanford - https://github.com/dlsstanford
-Courtney Williams - https://github.com/courtneyolivia
-Adam Troy - https://github.com/adamtroy
-Bhanoo Gulati - https://github.com/bizbuz
-Daryl Bilderback - https://github.com/dbilderback
+- Desmon Stanford - https://github.com/dlsstanford
+- Courtney Williams - https://github.com/courtneyolivia
+- Adam Troy - https://github.com/adamtroy
+- Bhanoo Gulati - https://github.com/bizbuz
+- Daryl Bilderback - https://github.com/dbilderback
 
 
 ## Built With:
