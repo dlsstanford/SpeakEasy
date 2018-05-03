@@ -158,7 +158,7 @@ $(document).ready(function() {
             window.location.href = "/signin";
             break;
           case "entry":
-            window.location.href = "/entry/:user_id=" + userId;
+            window.location.href = "/entry" + userId;
             break;
         }
       }

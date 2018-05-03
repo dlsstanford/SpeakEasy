@@ -161,6 +161,14 @@ $(document).ready(function() {
       }
     },
     {
+      description: "Submit the new post for entry",
+      indexes: ["submit this post", "add this to my journal"],
+      action: function(i) {
+  handleFormSubmit(event);
+
+      }
+    },
+    {
       description: "Go to specified page (diary, entry, user)",
       indexes: ["Take me to the * Page", "Go to the * Page"],
       smart: true,
@@ -179,14 +187,6 @@ $(document).ready(function() {
             window.location.href = "/entry/:user_id=" + userId;
             break;
         }
-      }
-    },
-    //
-    {
-      description: "Login to SpeakEasy ",
-      indexes: ["log in", "log me in"],
-      action: function(i, wildcard) {
-        document.getElementById("").click();
       }
     }
   ];
@@ -242,7 +242,7 @@ $(document).ready(function() {
       var latestResult = noteContent[noteContent.length - 1];
       console.log(latestResult);
       if (latestResult === "speak") {
-        noteContent.empty();
+        noteContent.length = 0;
       } else if (noteContent[noteContent.length - 2] === " stop recording now") {
         UserDictation.stop();
       } else if (latestResult === "") {
