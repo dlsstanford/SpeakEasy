@@ -1,44 +1,33 @@
-# groupProject2
+# SpeakEasy
 
-Group name: # 11 Baby Got Hack
+![Swagger Validator](https://img.shields.io/swagger/valid/2.0/https/raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json.svg)
 
-Team members:
-      Bhanoo Gulati
-      Adam Troy
-      Daryl Bilderback
-      Courtney Williams
-      Desmon Stanford
+ a journal entry app that incorporates use of voice recognition and commands to quickly jot down ideas and information for future consumption. For security protection, SpeakEasy also stores the users personal journal entries into a safe location with password/username integration. 
+
+> View live Application: https://speakeasy-706.herokuapp.com/ 
+
+- In order to utilize voice recognition features, ensure you are using a compatible web browser (Google Chrome) and allow microphone access on the inital Diary page.
+
+- The applicable voice commands are listed in a table at the bottom of each individual page.
+
+## Getting Started 
+
+1.  After cloning the repo, `cd ./` into your project folder and run `npm install` in the command line to download the necessary dev dependencies
+
+2.  `node server.js` will open the app on localhost:8080
    
-Synopsis:
-      SpeakEasy is a journal entry app that incorporates use of integrated voice recognition and text conversion to multiple         languages. It is targeted toward businesses, students, and busy, working people who feel the need to quickly jot down         ideas and information without the worry of forgetting important information or losing documents. For security                 protection, SpeakEasy also stores the users personal journal entries into a safe location with password/username               integration.
-
-Roles:
-      Courtney & Adam : Frontend design and HTML routes
-      Bhanoo: Node Routes
-      Desmond: Sequelize Library, 
-      Daryl: Environment SetUp, Database .  - MySql, Authentication,
+## Contributors
+- Desmon Stanford - https://github.com/dlsstanford
+- Courtney Williams - https://github.com/courtneyolivia
+- Adam Troy - https://github.com/adamtroy
+- Bhanoo Gulati - https://github.com/bizbuz
+- Daryl Bilderback - https://github.com/dbilderback
 
 
-External API: 
-      Web Speech API, bcrypt llibrray, wiziwig editor (maybe)
-
-    
-Storyboard:
-      Page1: Login Page 
-      Page2: Journal/Journal Entry
-      Page3: Journey Detail
-      Page4: Edit Profile
-
-
-Data Model:                     Journal Entry 
-User details:                    Title 
-User ID: PK                      Details, text  
-First Name
-Last Name 
-email 
-language 
-voice
-timestamp/ timezone 
+## Built With:
+- Google SpeechRecognition Webkit
+-  Artyom.js (voice commands)
+-  Passport.js (password integration)
 
 
  
