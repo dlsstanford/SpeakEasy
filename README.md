@@ -6,6 +6,10 @@
 
 > View live Application: https://speakeasy-706.herokuapp.com/ 
 
+- In order to utilize voice recognition features, ensure you are using a compatible web browser (Google Chrome) and allow microphone access on the inital Diary page.
+
+- The applicable voice commands are listed in a table at the bottom of each individual page.
+
 ## Getting Started 
 
 1.  After cloning the repo, `cd ./` into your project folder and run `npm install` in the command line to download the necessary dev dependencies
