@@ -155,7 +155,7 @@ $(document).ready(function() {
     {
       description:
         "Trigger the creation of a post with your voice (fills to body input area)",
-      indexes: ["'start recording a new note'", "'create a new note'"],
+      indexes: ["start recording a new note", "create a new note"],
       action: function(i) {
         stopArtyom();
         UserDictation.start();
@@ -164,19 +164,19 @@ $(document).ready(function() {
     {
       description:
         "Stop voice recording and return to command recognition mode (during note dictation)",
-      indexes: ["'Stop recording now'"]
+      indexes: ["Stop recording now"]
     },
     {
       description:
         "Submit the new post for entry (Must fill out both Title and Body fields",
-      indexes: ["'submit this post'", "'add this to my journal'"],
+      indexes: ["submit this post", "add this to my journal"],
       action: function(i) {
         handleFormSubmit(event);
       }
     },
     {
       description: "Go to specified page (diary, entry, user)",
-      indexes: ["'Take me to the * Page'", "'Go to the * Page'"],
+      indexes: ["Take me to the * Page", "Go to the * Page"],
       smart: true,
       action: function(i, wildcard) {
         switch (wildcard) {
