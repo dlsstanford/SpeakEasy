@@ -3,12 +3,15 @@
 ![Swagger Validator](https://img.shields.io/swagger/valid/2.0/https/raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json.svg)
 
  a journal entry app that incorporates use of voice recognition and commands to quickly jot down ideas and information for future consumption. For security protection, SpeakEasy also stores the users personal journal entries into a safe location with password/username integration. 
+ 
 
 > View live Application: https://speakeasy-706.herokuapp.com/ 
 
 - In order to utilize voice recognition features, ensure you are using a compatible web browser (Google Chrome) and allow microphone access on the inital Diary page.
 
 - The applicable voice commands are listed in a table at the bottom of each individual page.
+
+![Speak Easy](/public/assets/img/1.jpg)
 
 ## Getting Started 
 
